@@ -1,0 +1,26 @@
+[
+  {
+    "id": "v-101",
+    "floor": 4,
+    "name": "Energy Drink 250ml",
+    "category": "Beverage",
+    "price": 60,
+    "stockStatus": "in_stock"
+  },
+  {
+    "id": "v-102",
+    "floor": 4,
+    "name": "Protein Bar",
+    "category": "Snack",
+    "price": 40,
+    "stockStatus": "low_stock"
+  },
+  {
+    "id": "v-103",
+    "floor": 1,
+    "name": "Sparkling Water",
+    "category": "Beverage",
+    "price": 30,
+    "stockStatus": "out_of_stock"
+  }
+]
