@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+/* Clean, flat, warm minimalist canvas */
+.va-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 32px 80px 32px;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: #1a1a1a;
+  background-color: #fdfbf7;
+  min-height: 100vh;
+}
+
+/* Header */
+.va-header-block {
+  margin-bottom: 28px;
+}
+
+.va-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.va-title-group h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0;
+  letter-spacing: -0.6px;
+}
+
+.va-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Minimalist Floor Picker */
+.va-floor-pill {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid #e7e5e4;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.va-floor-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: #78716c;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-right: 6px;
+}
+
+.va-select {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1c1917;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Top Action Button */
+.va-btn-report-main {
+  background: #3b82f6;
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(59, 130, 246, 0.25);
+  transition: background 0.15s ease;
+}
+
+.va-btn-report-main:hover {
+  background: #2563eb;
+}
+
+/* Section Titles */
+.va-section {
+  margin-bottom: 40px;
+}
+
+.va-section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1c1917;
+  margin: 0 0 18px 0;
+  letter-spacing: -0.4px;
+}
+
+/* Grid Layout */
+.va-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+@media (max-width: 1024px) {
+  .va-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+/* Modern Minimalist Cards */
+.va-card {
+  border-radius: 16px;
+  padding: 20px 22px;
+  border-width: 1.5px;
+  border-style: solid;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 140px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.va-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+}
+
+/* Soft Pastels (Exact Reference 2 Color Palette) */
+.va-card-green {
+  background-color: #ffffff;
+  border-color: #bbf7d0;
+}
+
+.va-card-yellow {
+  background-color: #ffffff;
+  border-color: #fed7aa;
+}
+
+.va-card-pink {
+  background-color: #ffffff;
+  border-color: #fecdd3;
+}
+
+/* Inner Split */
+.va-card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.va-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.va-card-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Pill Badges */
+.va-pill-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.va-pill-green {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.va-pill-yellow {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.va-pill-pink {
+  background: #ffe4e6;
+  color: #e11d48;
+}
+
+/* Typography Inside Cards */
+.va-item-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1c1917;
+  margin: 2px 0 0 0;
+  letter-spacing: -0.2px;
+}
+
+.va-item-sub {
+  font-size: 13px;
+  font-weight: 500;
+  color: #78716c;
+  margin: 0;
+}
+
+.va-price-label {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1c1917;
+  letter-spacing: -0.5px;
+}
+
+/* Minimalist Clean SVG Icons */
+.va-icon-svg {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+/* Full-Width Soft Action Button */
+.va-util-btn-pink {
+  margin-top: 14px;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #fecdd3;
+  background: #ffe4e6;
+  color: #b91c1c;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.va-util-btn-pink:hover {
+  background: #fecdd3;
+}
+
+/* Modal */
+.va-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 100;
+}
+
+.va-modal {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 28px;
+  max-width: 440px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e7e5e4;
+}
+
+.va-modal h3 {
+  margin: 0 0 14px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1c1917;
+}
+
+.va-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.va-form-group label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #44403c;
+}
+
+.va-form-group input,
+.va-form-group select,
+.va-form-group textarea {
+  padding: 9px 12px;
+  border: 1px solid #d6d3d1;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+
+.va-form-group input:focus,
+.va-form-group select:focus,
+.va-form-group textarea:focus {
+  border-color: #3b82f6;
+}
+
+.va-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.va-btn-modal-cancel {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #f5f5f4;
+  color: #57534e;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.va-btn-modal-submit {
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: none;
+  background: #3b82f6;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
