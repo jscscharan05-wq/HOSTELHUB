@@ -5,8 +5,7 @@ import EquipmentIssueModal from '../components/gym/EquipmentIssueModal';
 import CleaningScheduler from '../components/gym/CleaningScheduler';
 import gymMock from '../mocks/gymMock.json';
 
-const API_BASE = 'http://localhost:5000/api';
-
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
 export default function GymCleaning() {
   const [occupancy, setOccupancy] = useState(gymMock.occupancy);
   const [loading, setLoading] = useState(false);
