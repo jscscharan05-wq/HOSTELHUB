@@ -1,0 +1,53 @@
+{
+  "gymState": {
+    "currentOccupancy": 13,
+    "maxCapacity": 30,
+    "recommendedSlots": [
+      {
+        "timeRange": "06:00 - 08:00",
+        "predictedCrowd": "low"
+      },
+      {
+        "timeRange": "14:00 - 16:30",
+        "predictedCrowd": "low"
+      },
+      {
+        "timeRange": "18:00 - 21:00",
+        "predictedCrowd": "peak"
+      }
+    ]
+  },
+  "issues": [
+    {
+      "ticketId": "GYM-357",
+      "studentId": "STU1204",
+      "equipmentName": "Treadmill 2",
+      "severity": "critical",
+      "note": "Left deck belt slipping.",
+      "status": "logged",
+      "createdAt": "2026-09-05T20:05:00.648Z"
+    },
+    {
+      "ticketId": "GYM-847",
+      "studentId": "STU1204",
+      "equipmentName": "Treadmill 2",
+      "severity": "critical",
+      "note": "Left deck belt slipping.",
+      "status": "logged",
+      "createdAt": "2026-09-05T20:05:17.067Z"
+    }
+  ],
+  "cleaningRequests": [
+    {
+      "requestId": "CLN-1309",
+      "studentId": "STU1204",
+      "roomNumber": "412",
+      "floor": 4,
+      "type": "on_demand",
+      "requestedSlot": "14:00 - 15:00",
+      "serviceDetails": "Water spilled",
+      "status": "scheduled",
+      "scheduledFor": "2026-09-05T20:05:26.590Z"
+    }
+  ]
+}
