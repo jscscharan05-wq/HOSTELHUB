@@ -2,10 +2,9 @@ import React from 'react';
 
 export default function FloorSelector({ currentFloor, onFloorChange }) {
   return (
-    <div className="va-floor-picker">
-      <label htmlFor="floor-select" style={{ marginRight: '8px', fontWeight: 600 }}>
-        Current Floor:
-      </label>
+    <div className="va-floor-pill">
+      <span style={{ fontSize: '18px' }}>🏢</span>
+      <span className="va-floor-label">Current Floor:</span>
       <select
         id="floor-select"
         className="va-select"

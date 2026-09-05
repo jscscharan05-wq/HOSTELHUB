@@ -19,7 +19,11 @@ export default function VendingIssueModal({ floor, isOpen, onClose, onSubmit }) 
   return (
     <div className="va-modal-backdrop">
       <div className="va-modal">
-        <h3 style={{ marginTop: 0 }}>Report Vending Machine Issue (Floor {floor})</h3>
+        <h3>🚨 Report Vending Machine Issue</h3>
+        <p style={{ color: '#8c7e99', fontSize: '14px', marginTop: '-12px', marginBottom: '16px' }}>
+          Floor {floor} Unit
+        </p>
+
         <form onSubmit={handleSubmit}>
           <div className="va-form-group">
             <label>Student ID</label>
@@ -48,6 +52,7 @@ export default function VendingIssueModal({ floor, isOpen, onClose, onSubmit }) 
             <label>Transaction ID / UPI Ref (Optional)</label>
             <input
               type="text"
+              placeholder="e.g. 30291823901"
               value={formData.transactionId}
               onChange={(e) => setFormData({ ...formData, transactionId: e.target.value })}
             />
@@ -58,17 +63,18 @@ export default function VendingIssueModal({ floor, isOpen, onClose, onSubmit }) 
             <textarea
               rows="3"
               required
+              placeholder="Tell us what happened..."
               value={formData.description}
               onChange={(e) => setFormData({ ...formData, description: e.target.value })}
             />
           </div>
 
-          <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px' }}>
-            <button type="button" className="va-btn va-btn-secondary" onClick={onClose}>
+          <div className="va-modal-actions">
+            <button type="button" className="va-btn-modal-cancel" onClick={onClose}>
               Cancel
             </button>
-            <button type="submit" className="va-btn va-btn-primary">
-              Submit Ticket
+            <button type="submit" className="va-btn-modal-submit">
+              Submit Report
             </button>
           </div>
         </form>

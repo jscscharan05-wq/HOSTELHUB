@@ -13,29 +13,21 @@ export default function VendingApp() {
   const [isModalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    // 1. Fetch vending items
     fetch(`http://localhost:5000/api/vending/floors/${floor}/items`)
       .then((res) => {
-        if (!res.ok) throw new Error('API down');
+        if (!res.ok) throw new Error();
         return res.json();
       })
       .then((data) => setItems(data))
-      .catch(() => {
-        // Fallback to offline mock
-        setItems(mockData.items.filter((i) => i.floor === floor));
-      });
+      .catch(() => setItems(mockData.items.filter((i) => i.floor === floor)));
 
-    // 2. Fetch floor appliances
     fetch(`http://localhost:5000/api/floors/${floor}/appliances`)
       .then((res) => {
-        if (!res.ok) throw new Error('API down');
+        if (!res.ok) throw new Error();
         return res.json();
       })
       .then((data) => setAppliances(data))
-      .catch(() => {
-        // Fallback to offline mock
-        setAppliances(mockData.appliances.filter((a) => a.floor === floor));
-      });
+      .catch(() => setAppliances(mockData.appliances.filter((a) => a.floor === floor)));
   }, [floor]);
 
   const handleReportIssue = (payload) => {
@@ -66,7 +58,6 @@ export default function VendingApp() {
         );
       })
       .catch(() => {
-        // Local fallback optimistic update
         setAppliances((prev) =>
           prev.map((app) =>
             app.applianceId === applianceId ? { ...app, isWorking: false } : app
@@ -77,12 +68,23 @@ export default function VendingApp() {
 
   return (
     <div className="va-container">
-      <div className="va-header">
-        <h1>Vending & Floor Utilities</h1>
-        <FloorSelector currentFloor={floor} onFloorChange={setFloor} />
+      <div className="va-header-block">
+        <div className="va-header-top">
+          <div className="va-title-group">
+            <h1>Vending & Floor Utilities</h1>
+          </div>
+
+          <div className="va-actions-group">
+            <FloorSelector currentFloor={floor} onFloorChange={setFloor} />
+            <button className="va-btn-report-main" onClick={() => setModalOpen(true)}>
+              Report Issue / Stuck Item
+            </button>
+          </div>
+        </div>
       </div>
 
-      <VendingGrid items={items} onReportClick={() => setModalOpen(true)} />
+      <VendingGrid items={items} />
+
       <ApplianceBoard appliances={appliances} onReportFault={handleReportApplianceFault} />
 
       <VendingIssueModal
