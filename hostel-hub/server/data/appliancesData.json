@@ -1,0 +1,23 @@
+[
+  {
+    "applianceId": "APP-F4-AC",
+    "name": "Corridor Split AC",
+    "floor": 4,
+    "isWorking": true,
+    "lastInspected": "2026-09-01"
+  },
+  {
+    "applianceId": "APP-F4-COOLER",
+    "name": "Water Dispenser",
+    "floor": 4,
+    "isWorking": false,
+    "lastInspected": "2026-09-05"
+  },
+  {
+    "applianceId": "APP-F1-AC",
+    "name": "Corridor Split AC",
+    "floor": 1,
+    "isWorking": true,
+    "lastInspected": "2026-09-03"
+  }
+]
