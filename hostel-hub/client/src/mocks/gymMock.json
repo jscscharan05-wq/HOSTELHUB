@@ -1,0 +1,12 @@
+{
+  "occupancy": {
+    "currentOccupancy": 14,
+    "maxCapacity": 30,
+    "congestionLevel": "moderate",
+    "recommendedSlots": [
+      { "timeRange": "06:00 - 08:00", "predictedCrowd": "low" },
+      { "timeRange": "14:00 - 16:30", "predictedCrowd": "low" },
+      { "timeRange": "18:00 - 21:00", "predictedCrowd": "peak" }
+    ]
+  }
+}
