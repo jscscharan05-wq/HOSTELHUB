@@ -5,9 +5,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Dev 4 Gym & Maintenance routes
+const vendingRoutes = require('./routes/vendingRoutes');
 const gymRoutes = require('./routes/gymRoutes');
 
+app.use('/api', vendingRoutes);
 app.use('/api', gymRoutes);
 
 const PORT = process.env.PORT || 5000;
