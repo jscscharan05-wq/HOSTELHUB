@@ -1,0 +1,102 @@
+.va-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1a202c;
+}
+
+.va-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.va-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+}
+
+.va-section {
+  margin-bottom: 36px;
+}
+
+.va-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.va-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.va-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 9999px;
+  text-transform: capitalize;
+}
+
+.va-badge-in_stock { background: #dcfce7; color: #15803d; }
+.va-badge-low_stock { background: #fef9c3; color: #a16207; }
+.va-badge-out_of_stock { background: #fee2e2; color: #b91c1c; }
+
+.va-badge-working { background: #dcfce7; color: #15803d; }
+.va-badge-faulty { background: #fee2e2; color: #b91c1c; }
+
+.va-btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.va-btn-primary { background: #2563eb; color: #fff; }
+.va-btn-danger { background: #dc2626; color: #fff; margin-top: 8px; }
+.va-btn-secondary { background: #e2e8f0; color: #334155; }
+
+.va-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 50;
+}
+
+.va-modal {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 480px;
+  width: 100%;
+}
+
+.va-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.va-form-group input,
+.va-form-group select,
+.va-form-group textarea {
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+}

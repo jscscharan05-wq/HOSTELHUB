@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": "v-101",
+      "floor": 4,
+      "name": "Energy Drink 250ml",
+      "category": "Beverage",
+      "price": 60,
+      "stockStatus": "in_stock"
+    },
+    {
+      "id": "v-102",
+      "floor": 4,
+      "name": "Protein Bar",
+      "category": "Snack",
+      "price": 40,
+      "stockStatus": "low_stock"
+    },
+    {
+      "id": "v-103",
+      "floor": 4,
+      "name": "Sparkling Water",
+      "category": "Beverage",
+      "price": 30,
+      "stockStatus": "out_of_stock"
+    }
+  ],
+  "appliances": [
+    {
+      "applianceId": "APP-F4-AC",
+      "name": "Corridor Split AC",
+      "floor": 4,
+      "isWorking": true,
+      "lastInspected": "2026-09-01"
+    },
+    {
+      "applianceId": "APP-F4-COOLER",
+      "name": "Water Dispenser",
+      "floor": 4,
+      "isWorking": false,
+      "lastInspected": "2026-09-05"
+    }
+  ]
+}
